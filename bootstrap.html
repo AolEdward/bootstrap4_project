@@ -20,13 +20,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link text-light" href="#">ABOUT</a>
+                            <a class="nav-link text-light" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">SHOWTIMES</a>
+                            <a class="nav-link text-light" href="#showtimes">SHOWTIMES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled text-light">DEALS</a>
+                            <a class="nav-link text-light" href="#deals">DEALS</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -88,6 +88,9 @@
                 </div>
             </div>
 
+            
+              
+              
             <!--form email-->
             <div class="text-center">
                 <form>
@@ -100,6 +103,98 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
+
+            <!--ASSIGNMENT #1 : Used tables for the showtime-->
+            <div id="showtimes">
+                <table class="table my-5">
+                     <thead class="bg-info text-light">
+                    <tr>
+                     <th scope="col">FILM SHOWING</th>
+                        <th scope="col">TIMES</th>
+                     <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                     <tbody>
+                     <tr>
+                        <th scope="row">Beauty and the Beast</th>
+                     <td>10:00 A.M.</td>
+                     <td>1:30 P.M.</td>
+                     <td>5:00 P.M.</td>
+                         </tr>
+                         <tr>
+                      <th scope="row">Ghost in the Shell</th>
+                      <td>1:00 P.M.</td>
+                      <td>4:30 P.M.</td>
+                        <td>7:30 P.M.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Kong: Skull Island</th>
+                        <td>4:00 P.M.</td>
+                     <td>6:30 P.M.</td>
+                     <td>9:45 P.M.</td>
+                     </tr>
+                     </tbody>
+                 </table>
+            </div>  
+
+            <div>
+                <h3 id="about" class= "text-center text-primary ">ABOUT: CINEMA! CINEMA! CINEMA!</h3>
+                <img src="./Img/yeg.jpeg" class="img-fluid" alt="...">
+                <p>Located in the heart of Alberta, The city of Edmonton.
+                Cinema! Cinema! Cinema! is the number one destination for film entertainment.
+                Since 2001 we have successfully premiered top movies for all ages.
+                So sit and enjoy every movie with Cinema! Cinema! Cinema!</p>
+            </div>
+
+
+            <!--Deals using Accordion-->
+            <h3 id="deals" class="text-primary my-5">DEALS!</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Deal #1
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Movie Tuesdays: Enjoy 50% off purchased ticket! Only at Cinema! Cinema! Cinema!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Deal #2
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Date Night: Buy 1 and get 1 Free Movie Tickets, for couples when you use our Cinema App!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Deal #3
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Free M&M Candies when you buy a Popcorn Combo! Use the app and save!
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <!--Footer Links-->
             <div class="container my-5">
@@ -120,6 +215,7 @@
                 </ul>
             </div>
 
+            
 
 
         </div>
